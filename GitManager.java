@@ -696,10 +696,6 @@ public class GitManager {
                 blobSplit = (Blob) fm.readFile(BLOBS_FOLDER + blobSplitFile);
             }
 
-            // File in split and unmodified in head but modified in other
-
-            System.out.println("file: " + file); //remove
-
             try {
                 modifiedInHead = !blobSplitFile.equals(blobHeadFile);
             } catch (NullPointerException e) {

@@ -23,7 +23,9 @@ public class Main {
             gm.init();
             break;
         case "add":
-            gm.add(args[1]);
+            for (int i = 1; i < args.length; i++) {
+                gm.add(args[i]);
+            }
             break;
         case "commit":
             if (args.length < 2) {
